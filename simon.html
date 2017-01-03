@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src='simon.js'></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <!--  AUDIO  -->
+    <audio id="tl">
+     <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/wav">
+  </audio>
+    <audio id="tr">
+     <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mp3">
+  </audio>
+    <audio id="bl">
+     <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mp3">
+  </audio>
+    <audio id="br">
+     <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mp3">
+  </audio>
+    <audio id="turn">
+     <source src="http://s0.vocaroo.com/media/download_temp/Vocaroo_s0DCw0SDsoeo.mp3" type="audio/mp3">
+  </audio>
+    <audio id="deny"> <source src="http://s1.vocaroo.com/media/download_temp/Vocaroo_s1KBwHBzzk0O.mp3" type="audio/mp3"> </audio>
+    <audio id="controlButtons"><source src="http://s1.vocaroo.com/media/download_temp/Vocaroo_s1taJhYWm4sX.mp3" type="audio/mp3"></audio>
+
+    <!-- Instruction/Legend Panel -->
+    <div id="sheet">
+        <!-- Legend -->
+        <div id="legend">
+            <p> Legend </p>
+            <ul>
+                <li> <span> Green Button </span> &nbsp Start game</li>
+                <li> <span> Red Button </span> &nbsp Strict mode on</li>
+            </ul>
+        </div>
+        <!-- Instructions -->
+        <div id="instructions">
+            <p> Instructions </p>
+        </div>
+    </div>
+
+    <!-- Game Circle -->
+    <div id="big">
+        <!-- THE 4 OUTER BUTTONS -->
+        <div class="btn disabledButton" id="topLeft"> </div>
+        <div class="btn disabledButton" id="topRight"> </div>
+        <div class="btn disabledButton" id="bottomLeft"> </div>
+        <div class="btn disabledButton" id="bottomRight"> </div>
+        <!-- Inner Circle -->
+        <div id="controls">
+            <h1> <span>S</span><span>i</span><span>m</span><span>o</span><span>n</span></h1>
+            <div id="s">
+                <div id="start" class="disabledButton"></div>
+            </div>
+            <div id="str">
+                <div id="strict" class="disabledButton"></div>
+            </div>
+            <div id="power">
+                <p> Off/On </p>
+                <div id="main">
+                    <div id="st" class="first"></div>
+                    <div id="nd"></div>
+                </div>
+            </div>
+            <div id="bigScore">
+                <div id="score">
+                    <span> 0 </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simon Game Web Page -->
+    <div id="info">
+        <h1> <span> S </span> <span> i </span> <span> m </span> <span> o </span> <span> n </span> </h1>
+        <p> The game creates a series of tones and lights and requires a user to repeat the series. If the user succeeds the series becomes progressively longer and more complex. Once the user fails, the game is over! </p>
+        <div id="gallery">
+            <div> </div>
+            <div> </div>
+            <div> </div>
+        </div>
+        <h2> Instructions </h2>
+        <ol>
+            <li> Toggle the Off/On button </li>
+            <li> Press Strict Mode for a higher difficulty</li>
+            <li> Press Start </li>
+            <li> If you get to 20 score, you won! </li>
+        </ol>
+        <button> Collapse </button>
+    </div>
+
+
+
+</body>
+
+</html>
