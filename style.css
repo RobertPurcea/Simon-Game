@@ -1,482 +1,304 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'PT Serif', serif;
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'PT Serif', serif;
 }
-
-body {
-    background-image: url(http://www.myfreetextures.com/wp-content/uploads/2014/10/seamless-wood-texture-3.jpg);
+body{
+   background-image: url(http://www.myfreetextures.com/wp-content/uploads/2014/10/seamless-wood-texture-3.jpg);
 }
 
 
 /*   Outer and inner circle shape, positioning */
-
-#big {
-    position: relative;
-    width: 450px;
-    height: 450px;
-    background-color: #333;
-    margin: auto;
-    margin-top: 6%;
-    font-size: 0;
-    border-radius: 50%;
-    border: 20px solid #333;
-    box-shadow: 0px 0px 20px 1px black;
+#big{
+   position: relative;
+   width: 450px;
+   height: 450px;
+   background-color: #333;
+   margin: auto;
+   margin-top: 6%;
+   font-size: 0;
+   border-radius: 50%;
+   border: 20px solid #333;
+   box-shadow: 0px 0px 20px 1px black;
 }
-
-#controls {
-    width: 50%;
-    height: 50%;
-    margin: auto;
-    overflow: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    background-color: grey;
-    border: 20px solid #333;
-    display: block;
-    border-radius: 50%;
-    font-size: 0px;
+#controls{
+   width: 50%;
+   height: 50%;
+   margin: auto;
+   overflow: auto;
+   top: 0; left: 0; bottom: 0; right: 0;
+   position: absolute;
+   background-color: grey;
+   border: 20px solid #333;
+   display: block;
+   border-radius: 50%;
+   font-size: 0px;
 }
 
 
 /* Inner Circle Content */
 
-
 /* Title */
-
-#controls h1 {
-    font-size: 35px;
-    width: 50%;
-    height: 25%;
-    text-align: center;
-    display: block;
-    margin: auto;
-    color: white;
-    padding: 3%;
-    padding-top: 10%;
-    margin-bottom: 0.5em;
-    font-family: 'Indie Flower', cursive;
-    letter-spacing: 0.08em;
-    text-indent: -0.5em;
+#controls h1{
+   font-size: 35px;
+   width: 50%;
+   height: 25%;
+   text-align: center;
+   display: block;
+   margin: auto;
+   color: white;
+   padding: 3%;
+   padding-top: 10%;
+   margin-bottom: 0.5em;
+   font-family: 'Indie Flower', cursive;
+   letter-spacing: 0.08em;
+   text-indent: -0.5em;
 }
-
 
 /* SET MARGINS */
-
-#start, #strict, #power, #bigScore {
-    margin-top: 4% !important;
-    margin-bottom: 4% !important;
+#start, #strict, #power, #bigScore{
+   margin-top: 4% !important;
+   margin-bottom: 4% !important;
 }
-
 
 /*   ON/OFF BUTTONS    */
-
-#power, #bigScore {
-    margin-top: 10px !important;
-    width: 50%;
-    text-align: center;
-    display: inline-block;
-    height: 20%;
+#power, #bigScore{
+   margin-top: 10px !important;
+   width: 50%;
+   text-align: center;
+   display: inline-block;
+   height: 20%;
 }
-
-#power p {
-    font-size: 10px;
-    color: white;
+#power p{
+   font-size: 10px;
+   color: white;  
 }
-
-#main {
-    width: 40%;
-    height: 44%;
-    background-color: rgb(50, 50, 50);
-    font-size: 0;
-    cursor: pointer;
-    border-radius: 10px;
-    display: block;
-    margin: auto;
+#main{
+  width: 40%;
+  height: 44%;
+  background-color: rgb(50,50,50);
+  font-size: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
 }
-
-#main div {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
+#main div{
+  display: inline-block;
+  width: 50%;
+  height: 100%;
 }
-
-.second, .first {
-    background-color: white;
-    border: 0.5px solid black;
-    border-radius: 10px;
+.second, .first{
+  background-color: white;
+  border-radius: 10px;
 }
-
 
 /* SCORE */
-
-#bigScore {
-    float: right;
+#bigScore{
+   float: right;
 }
-
-#score {
-    width: 40%;
-    height: 75%;
-    display: block;
-    margin: auto;
-    position: relative;
-    top: 3px;
-    background-color: rgb(50, 50, 50);
-    border-radius: 10px;
+#score{
+   width: 40%;
+   height: 75%;
+   display: block;
+   margin: auto;
+   position: relative; 
+   top: 4px;
+   background-color: rgb(50,50,50);
+   
+   border-radius: 10px;
 }
-
-#score span {
-    font-size: 15px;
-    color: white;
-    display: block;
-    text-align: center;
-    position: relative;
-    top: 1px;
+#score span{
+   font-size: 15px;
+   color: white;
+   display: block;
+   text-align: center;
+   position: relative;
+   top: 1px;
 }
-
 
 /* START, STRICT */
-
-#s, #str {
-    display: inline-block;
-    width: 50%;
-    height: 30px;
-    margin-top: 10px;
+#s, #str{
+   display: inline-block;
+   width: 50%;
+   height: 30px;
+   margin-top: 10px;
+}
+#start, #strict{
+   width: 25px;
+   height: 25px;
+   background-color: grey;
+   display: block;
+   margin: auto;
+   border-radius: 50%;
+   cursor: pointer;
+}
+#start{
+   background-color: green;
+   box-shadow: 0 3px 1px 1px darkgreen;
+}
+#strict{
+   background-color: red;
+   box-shadow: 0 3px 1px 1px darkred;
+}
+#start:active{
+   position: relative;
+   top: 3px;
+   box-shadow: 0 0 0 0;
+}
+.activeStrict, #strict:active{
+   position: relative;
+   top: 3px;
+   box-shadow: 0 0 0 0 !important;
 }
 
-#start, #strict {
-    width: 25px;
-    height: 25px;
-    background-color: grey;
-    display: block;
-    margin: auto;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-#start {
-    background-color: green;
-    box-shadow: 0 3px 1px 1px darkgreen;
-}
-
-#strict {
-    background-color: red;
-    box-shadow: 0 3px 1px 1px darkred;
-}
-
-#start:active {
-    position: relative;
-    top: 3px;
-    box-shadow: 0 0 0 0;
-}
-
-.activeStrict, #strict:active {
-    position: relative;
-    top: 3px;
-    box-shadow: 0 0 0 0 !important;
-}
 
 
 /* OUTER BUTTONS */
-
-.btn {
-    background-color: yellow;
-    width: 46%;
-    height: 46%;
-    display: inline-block;
-    margin: 2%;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: all 0.1s;
+.btn{
+   background-color: yellow;
+   width: 46%;
+   height: 46%;
+   display: inline-block;
+   margin: 2%;
+   box-sizing: border-box;
+   cursor: pointer;
+   transition: all 0.1s;
 }
-
-#topLeft:active {
-    background-color: rgb(100, 200, 255);
+#topLeft:active{
+   background-color: rgb(100,200,255);
 }
-
-#bottomLeft:active {
-    background-color: rgb(250, 90, 100);
+#bottomLeft:active{
+   background-color: rgb(250,90,100);
+} 
+#topRight:active{
+   background-color: rgb(255,255,100);
+} 
+#bottomRight:active{
+   background-color: rgb(0,255,0);
 }
-
-#topRight:active {
-    background-color: rgb(255, 255, 100);
+#topLeft{
+   background-color: blue;
+   border-top-left-radius: 100%;
 }
-
-#bottomRight:active {
-    background-color: rgb(0, 255, 0);
+#topRight{
+   background-color: rgb(255,150,0);
+   border-top-right-radius: 100%;
 }
-
-#topLeft {
-    background-color: blue;
-    border-top-left-radius: 100%;
+#bottomLeft{
+   background-color: brown;
+   border-bottom-left-radius: 100%;
 }
-
-#topRight {
-    background-color: rgb(255, 150, 0);
-    border-top-right-radius: 100%;
+#bottomRight{
+   background-color: green;
+   border-bottom-right-radius: 100%;
 }
-
-#bottomLeft {
-    background-color: brown;
-    border-bottom-left-radius: 100%;
-}
-
-#bottomRight {
-    background-color: green;
-    border-bottom-right-radius: 100%;
-}
-
-.aitopLeft {
-    background-color: rgb(100, 200, 255) !important;
-}
-
-.aitopRight {
-    background-color: rgb(255, 255, 100) !important;
-}
-
-.aibottomLeft {
-    background-color: rgb(250, 90, 100) !important;
-}
-
-.aibottomRight {
-    background-color: rgb(0, 255, 0) !important;
+.aitopLeft{
+   background-color: rgb(100,200,255) !important;
+} 
+.aitopRight{
+   background-color: rgb(255,255,100) !important;
+} 
+.aibottomLeft{
+   background-color: rgb(250,90,100) !important;
+} 
+.aibottomRight{
+   background-color: rgb(0,255,0) !important;
 }
 
 
 /* DISABLE MOUSE-CLICK */
-
 .disabledButton {
     pointer-events: none;
 }
 
-
 /* Resize when the window is under 550px/750px*/
 
 @media only screen and (max-width: 750px) {
-    #big {
-        top: 70px;
-        transform: scale(0.9);
-        left: -2%;
-        transform-origin: 0 0;
-    }
-    #sheet {
-        transform: scale(0.8);
-        transform-origin: 0 0;
-        right: -20px !important;
-    }
+   #big{
+      top: 70px;
+      transform: scale(0.9);
+      left: -2%;
+      transform-origin: 0 0;
+   }
+   #sheet{
+      transform: scale(0.8);
+      transform-origin: 0 0;
+      right: -20px !important;
+   }
 }
-
 @media only screen and (max-width: 500px) {
-    #big {
-        transform: scale(0.7) !important;
-        transform-origin: 0 0;
-        left: 50%;
-        margin-left: -159px;
-    }
-    #sheet {
-        display: none;
-    }
+   #big{
+      transform: scale(0.7) !important;
+      transform-origin: 0 0;
+      left: 50%;
+      margin-left: -159px;
+   }
+   #sheet{
+      display: none;
+   }
 }
-
-
-/* Simon Web Page */
-
-#info {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(10, 10, 10, 0.99);
-    position: absolute;
-    top: 0;
-    display: none;
-}
-
-
-/* Collapse button */
-
-#info button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0.5em;
-    background-color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    color: black;
-    outline: none;
-    margin: 10px;
-    box-shadow: 0px 0.5px 2px 0.1px white;
-}
-
-#info button:active {
-    top: 2px;
-    box-shadow: 0 0 0 0;
-}
-
-
-/* Title */
-
-#info h1 {
-    text-align: center;
-    font-size: 40px;
-    margin: 20px;
-}
-
-h1 span:nth-child(1) {
-    color: blue;
-}
-
-h1 span:nth-child(2) {
-    color: orange;
-}
-
-h1 span:nth-child(3) {
-    color: red;
-}
-
-h1 span:nth-child(4) {
-    color: green;
-}
-
-h1 span:nth-child(5) {
-    color: blue;
-}
-
-
-/* Content */
-
-#info p {
-    text-indent: 0px;
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    font-family: cursive;
-    padding: 10px;
-}
-
-ol {
-    display: block;
-    list-style-type: decimal;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding-left: 40px;
-}
-
-ol li {
-    margin: 0.5%;
-    color: white;
-}
-
-#info h2 {
-    text-align: center;
-    padding-top: 1%;
-    color: white;
-}
-
-#gallery {
-    display: block;
-    margin: auto;
-    width: 80vw;
-    max-width: 900px;
-    margin-top: 20px;
-    font-size: 0;
-    height: 22vw;
-    max-height: 190px;
-}
-
-#gallery div {
-    display: inline-block;
-    width: 29.33%;
-    height: 100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-#gallery div:nth-child(2) {
-    background-image: url(http://dalpix.com/images/Simon-Game_l.jpg)
-}
-
-#gallery div:nth-child(1) {
-    background-image: url(https://cf.geekdo-images.com/images/pic288369.jpg)
-}
-
-#gallery div:nth-child(3) {
-    background-image: url(http://prodimage.images-bn.com/pimages/0014397018975_p0_v1_s550x406.jpg)
-}
-
 
 /* SHEET */
-
-#sheet {
-    background-image: url(https://s24.postimg.org/vp1v50ylh/13411680_A_new_clipboard_with_a_blank_sheet_of_p.jpg);
-    width: 141.5px;
-    height: 199px;
-    background-size: contain;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    background-repeat: no-repeat;
-    box-shadow: 0px 2px 10px 1px;
+#sheet{
+   background-image: url(https://s28.postimg.org/awl5douu5/image.jpg);
+   width: 141.5px;
+   height: 199px;
+   background-size: contain;
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   background-repeat: no-repeat;
+   box-shadow: 0px 2px 10px 1px;
 }
-
 
 /* Legend and Instruction Buttons*/
-
-#legend, #instructions {
-    color: grey;
-    position: relative;
-    cursor: pointer;
-    text-indent: 10px;
+#legend, #instructions{
+   color: grey;
+   position: relative;
+   cursor: pointer;
+   text-indent: 10px;
 }
-
-#legend p, #legend li, #legend span, #instructions p {
-    font-family: 'Handlee', cursive;
-    color: black;
+#legend p, #legend li, #legend span, #instructions p{
+   font-family: 'Handlee', cursive;
+   color: black;
 }
-
-#legend {
-    top: 20px;
+#legend p{
+   font-size: 2.8vmin
 }
-
-#instructions {
-    top: 35px;
+#legend{
+   top: 20px;
 }
-
-#legend ul {
-    list-style-type: none;
-    display: none;
+#instructions{
+   top: 35px;
 }
-
+#legend ul{
+   list-style-type: none;
+   display: none;
+}
 
 /* Arrows */
-
-#legend ul li span::after {
-    content: "";
-    display: inline-block;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    position: relative;
-    width: 0.4em;
-    height: 0.4em;
-    transform: rotate(135deg);
+#legend ul li span::after{
+   content: "";
+   display: inline-block;
+   border-top: 1px solid black;
+   border-left: 1px solid black;
+   position: relative;
+   width: 0.4em; height: 0.4em;
+   transform: rotate(135deg);
+}
+#legend ul li{
+   margin: 0.3em 0 0 0;
 }
 
-#legend ul li {
-    margin: 0.2em 0.2em 0.2em 1em;
-}
 
 
 /* Helper Classes */
-
-.hide {
-    display: none;
+.hide{
+   display: none;
+}
+.height{
+   height: 0 !important;
 }
 
-.height {
-    height: 0 !important;
-}
